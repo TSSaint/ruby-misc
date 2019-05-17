@@ -28,9 +28,9 @@ def count_vowels(word)
     i = 0 # starts at 0 and is compared to word length
 
     while i < word.length
-        char = word[i]
+        char = word[i] # always starts at the first indice of some string, as i = 0
 
-        if char == "a" || char == "e" || char == "i" || char == "o" || char == "u"
+        if char == "a" || char == "e" || char == "i" || char == "o" || char == "u" || char == "A" || char == "E" || char == "I" || char == "O" || char == "U"
             count += 1 # increments only if a match letter is found
         end
 
@@ -40,4 +40,4 @@ def count_vowels(word)
 
 end
 
-puts count_vowels("bruhuhuhuhuhuhu")
+puts count_vowels("brUhUhUhUhUhU")
