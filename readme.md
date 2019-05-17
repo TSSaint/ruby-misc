@@ -1,0 +1,1 @@
+first programming attempt/git commit in 2 years, lets see where this takes me this time around.
