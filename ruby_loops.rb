@@ -5,7 +5,7 @@
 
 def repeatHello()
     counter = 1
-    while counter < 5
+    while counter < 5 # becomes false || true at some point, stopping the method call
         puts "hello"
         counter += 0
     end
