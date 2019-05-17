@@ -20,4 +20,24 @@ def count_e(word)
     return count
 end
 
-puts count_e("excellence")
+# puts count_e("excellence")
+
+# write a method that counts the number of vowels in a word and returns the number of vowels
+def count_vowels(word)
+    count = 0 # stores the number of vowels
+    i = 0 # starts at 0 and is compared to word length
+
+    while i < word.length
+        char = word[i]
+
+        if char == "a" || char == "e" || char == "i" || char == "o" || char == "u"
+            count += 1 # increments only if a match letter is found
+        end
+
+        i += 1 # i increases until the length of the word is equal to i, then loop stops
+    end
+    return count
+
+end
+
+puts count_vowels("bruhuhuhuhuhuhu")
