@@ -90,3 +90,13 @@ end
 # puts number_check(-200)
 # puts number_check(0.0)
         
+# write a method that takes in a word and returns a string long if > 6, short if < 6, and medium if == 6
+def word_check(word)
+    if word.length > 6
+        puts "long"
+    elsif word.length < 6
+        puts "short"
+    else word.length == 6
+        puts "medium"
+    end
+end
