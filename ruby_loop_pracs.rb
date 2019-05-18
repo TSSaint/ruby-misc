@@ -62,4 +62,41 @@ end
 
 count_spaces("The quick brown fox jumps over the lazy frog.")
 
-            
+# write a method that takes ina string word and returns the number of letter a's in the word, counting both upper and lower case
+def count_a(word)
+    count = 0 # will store instances of a in string
+    i = 0 # counter for indices starting at 0 based on word.length
+    while i < word.length # while i is less than the int val of the word's string length
+        char = word[i] # stores the indice, starting at zero, into this variable
+
+        if char == "a" || char == "A"
+            count += 1 # add count for verified instance of a
+        end
+
+        i += 1 # increment the indice to check the next item in string
+    end
+    puts "There are " + count.to_s + " instances of a in this word."
+    return count 
+end
+
+# count_a("blahblahblahblah")
+# count_a("watermelon")
+
+# write a method that finds letters t, o, and m only and returns how many of them are in the string
+def find_tom(phrase)
+    count = 0 # stores number of t o m's
+    i = 0 # start of indice in string
+    while i < phrase.length
+        char = phrase[i] # char looks at each letter based on string indice
+
+        if char == "t" || char == "T" || char == "o" || char == "O" || char == "m" || char == "M"
+            count += 1
+        end
+
+        i += 1
+    end
+    puts "there are " + count.to_s + " instances of letters T, O, and M in this phrase."
+    return count
+end
+
+find_tom("Truly, there can only be so many awesome Toms in the world.")
