@@ -20,7 +20,7 @@ def count_e(word)
     return count
 end
 
-# puts count_e("excellence")
+puts count_e("excellence")
 
 # write a method that counts the number of vowels in a word and returns the number of vowels
 def count_vowels(word)
@@ -36,8 +36,30 @@ def count_vowels(word)
 
         i += 1 # i increases until the length of the word is equal to i, then loop stops
     end
+    puts "There are " + count.to_s + " vowels in this word!"
     return count
 
 end
 
-puts count_vowels("brUhUhUhUhUhU")
+puts count_vowels("antidisistablishmentarianism")
+
+# write a method that counts the number of spaces in a sentence
+def count_spaces(sentence) # pass a sentence ideally with spaces in between words
+    count = 0 # variable counting how many spaces there are
+    i = 0 # starts at 0; this counter will be compared to the length of the entire string passed and iterates onward until length of string is reached
+    while i < sentence.length # if the 0 counter is less than the lengh of whole string passed into method
+        char = sentence[i] # variable char is the item each that holds each letter
+
+        if char == " " 
+            count += 1 # increments only if there is a found space in the string
+        end
+            
+        i += 1 # increments in ones based on sentence length
+    end
+    puts "There are " + count.to_s + " spaces in this sentence."
+    return count
+end
+
+count_spaces("The quick brown fox jumps over the lazy frog.")
+
+            
