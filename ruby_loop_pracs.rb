@@ -113,9 +113,75 @@ def sum_nums(max)
         i += 1 # increments up after each iteration until i == int value of max
     end
 
-    return sum 
+    return sum # stores value of sum
 end
 
 puts "sum_nums method below ---"
 puts sum_nums(4)
 puts sum_nums(5)
+puts sum_nums(10)
+puts sum_nums(50)
+
+# write a method that takes in a number and returns the product of all nums from 1 up to and including num
+
+def factorial(num)
+    prod = 1 # the final product of all numbers based on passed int num
+    i = 2 # starts at 2
+
+    while i <= num # while i is less than num itself
+        prod *= i # product value becomes i * itself + last iteration of i
+
+        i += 1
+    end
+
+    return prod
+end
+
+puts factorial(3) # --> 1*2*3 = 6
+puts factorial(5) # --> 1*2*3*4*5 = 120
+
+# write a method that takes in a string word and returns the word with letters in reverse order
+
+def reverse(word)
+    new_word = ""
+    i = 0 # start of indice
+
+    while i < word.length # while the length of the string is less than i
+        char = word[i] # string value of char becomes the indice of the current word[i]
+        new_word = char + new_word # string concatenation
+
+        i += 1 # increment up to loop the next indice
+    end
+
+    return new_word # store the final result
+end
+
+puts reverse("samohT")
+
+# write a method that takes in a string and returns true if palindrome, false if otherwise ; ex. kayak != palindrome, racecar != palindrome
+
+def is_palindrome(word)
+    original = word # set original to a variable to be compared to later
+    compared = "" # set to empty string for later comparison
+    i = 0 # initial indice
+    while i < word.length # while i is less than the length of entered string, iterate the loop
+        char = word[i] # the string value of char becomes the indice
+        compared = char + compared # the string value in compared will be concatenated with the next iteration of word[i]
+        
+        i += 1 # increment up one for indice
+    end
+    # puts original
+    puts compared
+    # if (original == compared)
+    #     puts "this is a palindrome"
+    #     return true
+    # else
+    #     puts "this is not a palindrome"
+    #     return false
+    # end
+end
+
+puts "palindrome method under here ---"
+puts is_palindrome("racecar")
+
+
