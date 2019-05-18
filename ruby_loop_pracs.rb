@@ -99,4 +99,23 @@ def find_tom(phrase)
     return count
 end
 
-find_tom("Truly, there can only be so many awesome Toms in the world.")
+# find_tom("Truly, there can only be so many awesome Toms in the world.")
+
+# write a method that takes in a number max and the sum of all numbers from 1 up to and including the max
+
+def sum_nums(max)
+    # num = max # var num stores the passed int
+    sum = 0 # the sum of all numbers, 0 at first since no equations are run yet
+    i = 1 # starts at 1 
+    while i <= max # as long as i is less than the passed int, max
+        sum += i # the value of sum is itself plus the next iteration until i == int value of max
+        
+        i += 1 # increments up after each iteration until i == int value of max
+    end
+
+    return sum 
+end
+
+puts "sum_nums method below ---"
+puts sum_nums(4)
+puts sum_nums(5)
