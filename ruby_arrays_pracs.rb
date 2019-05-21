@@ -34,3 +34,39 @@ def yeller(words) # words is var of an array of strings
 end
 
 print yeller(["Hello", "World"])
+
+# write a method that takes in an array of nums and returns a new array w/ every number of original array * it's index
+def multiply_arrnums_by_index(numbers) # array of ints
+    new_array = [] # empty array
+    i = 0 # start at indice 0
+    while i < numbers.length
+        new_array << numbers[i] * i # shovel  value of int val of the indice * the indice
+        # numb_to_mult = numbers[i]
+        # numb_multd = numbers[i] * numb_to_mult
+        # new_array << numb_multd
+        i += 1 # next iteration
+    end
+    return new_array
+end
+
+puts "next method ---"
+print multiply_arrnums_by_index([4, 7, 6, 5]) 
+# print multiply_arrnums_by_index([0, 1, 2, 3, 4, 5])
+
+# write a method that takes a number max and returns an array containing all even numbers from 0 to max
+def even_nums(max) # max is some int
+    new_arr = [] # initialize new array
+    i = 0 # indice counter @ 0
+
+    while i <= max # while i is less than or equal to the given int
+        if i % 2 == 0 # if i is not divisible by 0
+        new_arr << i # add the number into the new array
+        end
+
+        i += 1
+    end
+    return new_arr
+end
+
+puts "next method ---"
+print even_nums(49)
