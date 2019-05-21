@@ -69,7 +69,7 @@ def even_nums(max) # max is some int
 end
 
 puts "next method ---"
-print even_nums(49)
+print even_nums(24)
 
 # write a method with a range from min to max. the function should return an array w/ all nums from the min to max including themselves
 
@@ -89,3 +89,38 @@ end
 
 puts "next method ---"
 print range(13, 20)
+
+# write method that takes a min and max; return an array containing all odd nums from min to max
+
+def odd_range(min, max)
+	range = []
+  	i = min 
+  	
+  	while i <= max
+      if i % 2 != 0
+      range << i
+      end
+      
+      i += 1  
+    end
+	return range
+end
+
+puts "next method ---"
+print odd_range(1, 24)
+
+def reverse_range(min, max)
+    range = []
+    i = max - 1
+
+    while i > min
+        range << i
+        i -= 1
+    end  
+    
+    return range
+end
+
+puts "next method ---"
+print reverse_range(11, 17)
+

@@ -3,6 +3,7 @@
 
 french_foods = ['coq au vin', 'foie gras', 'caviar', 'bourguignon', 'flamiche', 'confit', 'ratatouille' ]
 matrix_folks = ["Neo", "Morpheus", "Trinity", "Cypher", "Tank"]
+cami_the_pleb = ["black hair", "egg head", "brown", "short hair" , "plebby personality"]
 # puts french_foods
 # puts french_foods.length
 
@@ -21,10 +22,11 @@ def print_array(arr) # takes some variable with array
     while i < arr.length # every element of array
     # puts i # print some num, in this case will be the number corresponding with indice in array
     puts arr[i] # will print each item in array that corresponds
-        
+    
     i += 1
     end
 end
 
 # print_array(french_foods)
-print_array(matrix_folks)
+# print_array(matrix_folks)
+print_array(cami_the_pleb)
