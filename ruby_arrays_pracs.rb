@@ -70,3 +70,22 @@ end
 
 puts "next method ---"
 print even_nums(49)
+
+# write a method with a range from min to max. the function should return an array w/ all nums from the min to max including themselves
+
+def range(min, max) # takes some smaller num and then a larger num
+    range_arr = [] # initialize new array
+    i = min # indice counter @ whatever the first number passed in is
+
+    firstnum = min # store val of first num
+    lastnum = max # store val of last num
+    
+    while i <= max
+        range_arr << i
+        i += 1
+    end
+    return range_arr
+end
+
+puts "next method ---"
+print range(13, 20)
