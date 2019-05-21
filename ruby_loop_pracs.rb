@@ -172,16 +172,19 @@ def is_palindrome(word)
     end
     # puts original
     puts compared
-    # if (original == compared)
-    #     puts "this is a palindrome"
-    #     return true
-    # else
-    #     puts "this is not a palindrome"
-    #     return false
-    # end
+    if (original == compared)
+        puts "this is a palindrome"
+        return true
+    else
+        puts "this is not a palindrome"
+        return false
+    end
 end
 
 puts "palindrome method under here ---"
-puts is_palindrome("racecar")
+puts is_palindrome("racecar")  
+puts is_palindrome("kayak")    
+puts is_palindrome("bootcamp")
+puts is_palindrome("celebrexerbelec")
 
 
