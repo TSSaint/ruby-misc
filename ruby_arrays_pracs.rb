@@ -124,3 +124,22 @@ end
 puts "next method ---"
 print reverse_range(11, 17)
 
+# write am ethod that takes in an array and returns a new array w/ first half of elements; if odd include the middle one too
+def first_half(array)
+	arr = [] # initialize arr
+  	i = 0 # start at first indice
+
+    while i < (array.length / 2.0) # while indice is less than the length of the array rounded up by half
+        push_this = array[i] # add corresponding item into variable 
+        arr << push_this # add variable into the array
+
+        i += 1 # iterate next
+    end
+
+    return arr
+end
+
+puts "next method ---"
+print first_half(["Brian", "Abby", "David", "Ommi"]) # => ["Brian", "Abby"]
+puts
+print first_half(["a", "b", "c", "d", "e"])    
